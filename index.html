@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wisata Lombok Utara - Destinasi Wisata Terbaik di Pulau Lombok">
+    <title>Wisata Lombok Utara</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Global Style */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 40px 10%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Styling untuk Slider */
+        .slider-container {
+            position: relative;
+            max-width: 80%;
+            margin: 0 auto 30px auto; /* Centering the slider */
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .slider-images {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slider-images img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 30px;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 50%;
+            transform: translate(0, -50%);
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        /* Styling untuk Gambar dan Konten lainnya */
+        .image-container {
+            display: flex;
+            justify-content: center; /* Menempatkan gambar di tengah */
+            gap: 20px; /* Jarak antar gambar */
+            flex-wrap: wrap; /* Membuat gambar dapat membungkus jika layar kecil */
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Peta Google Map */
+        iframe {
+            max-width: 100%;
+            border: 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wisata Lombok Utara</h1>
+        <nav>
+            <ul>
+                <li><a href="#pantai">Pantai</a></li>
+                <li><a href="#air-terjun">Air Terjun</a></li>
+                <li><a href="#kuliner">Kuliner</a></li>
+                <li><a href="#akomodasi">Akomodasi</a></li>
+                <li><a href="#lokasi">Lokasi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="pantai">
+        <h2>Pantai di Lombok Utara</h2>
+        <p>Lombok Utara terkenal dengan pantai-pantai yang eksotis seperti Pantai Gili Trawangan dan Pantai Senggigi.</p>
+        
+        <!-- Slider Gambar Pantai -->
+        <div class="slider-container">
+                <img src="images/pantai.jpg" alt="Pantai Lombok Utara">
+                <img src="images/97.jpg" alt="Pantai Lombok Utara">
+            
+        </div>
+    </section>
+
+    <section id="air-terjun">
+        <h2>Air Terjun di Lombok Utara</h2>
+        <p>Selain pantai, Lombok Utara juga memiliki air terjun yang menakjubkan seperti Air Terjun Kerta Gangga dan Air Terjun Tiu Kelep.</p>
+        <div class="image-container">
+            <img src="images/air.jpg" alt="Air Terjun Lombok Utara" width="600">
+            <img src="images/air-terjun-tiu-kelep-10.jpg" alt="Air Terjun Lombok Utara" width="600">
+            <img src="images/22.jpg" alt="Air Terjun Lombok Utara" width="600">
+            <img src="images/33.jpeg" alt="Air Terjun Lombok Utara" width="600">
+        
+        </div>
+    </section>
+
+    <section id="kuliner">
+        <h2>Kuliner Lombok Utara</h2>
+        <p>Jangan lupa mencoba makanan khas Lombok Utara di Bale Hao Cafe.</p>
+        <div class="image-container">
+            <img src="images/images (1).jpeg" alt="Kuliner Lombok Utara" width="200">
+            <img src="images/images.jpeg" alt="Kuliner Lombok Utara" width="600">
+        </div>
+    </section>
+
+    <section id="akomodasi">
+        <h2>Akomodasi di Lombok Utara</h2>
+        <p>Lombok Utara juga memiliki banyak pilihan akomodasi, mulai dari hotel berbintang hingga penginapan tradisional.</p>
+        <div class="image-container">
+            <img src="images/foto 1.jpg" alt="Akomodasi Lombok Utara" width="300">
+            <img src="images/foto2.jpg" alt="Akomodasi Lombok Utara" width="300">
+            <img src="images/foto3.jpg" alt="Akomodasi Lombok Utara" width="300">
+            <img src="images/hotel.webp" alt="Akomodasi Lombok Utara" width="300">
+            <img src="images/11.jpg" alt="Akomodasi Lombok Utara" width="300">
+        </div>
+    </section>
+
+    <section id="lokasi">
+        <h2>Lokasi Wisata Lombok Utara</h2>
+        <p>Temukan lokasi wisata utama di Lombok Utara menggunakan peta interaktif di bawah ini:</p>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254139.05964047274!2d116.08512909891153!3d-8.51263659680474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcfa29a2cf7c67d%3A0x93ed385c60ae56c5!2s"

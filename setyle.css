@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #8ecf25;
+}
+
+header {
+    background-image: url(pantai.jpg);
+    background-color: #1e4d4b; /* Hijau tua untuk tema alam */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #0478bb; /* Biru untuk highlight */
+}
+
+section {
+    padding: 40px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    max-width: 1000px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+section h2 {
+    color: #1e4d4b;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+section p {
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0 20px;
+    line-height: 1.8;
+    z-index: 1;
+}
+
+section img {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Background image untuk section (Tema wisata alam) */
+section.bg-tourism {
+    background-image: url('your-destination-image.jpg'); /* Ganti dengan gambar latar belakang sesuai destinasi */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Bayangan teks untuk kontras */
+}
+
+/* Styling Footer */
+footer {
+    background-color: #0478bb;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #f1dfdf; /* Efek hover putih pada link */
+}
